@@ -90,6 +90,8 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.superior_settings_recents);
+	mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.how_to_slim);
+
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 		
