@@ -65,7 +65,6 @@ public class PulseBlacklist extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.pulse_blacklist);
         initializeAllPreferences();
     }
 
@@ -99,7 +98,7 @@ public class PulseBlacklist extends SettingsPreferenceFragment implements
     public int getDialogMetricsCategory(int dialogId) {
         switch (dialogId) {
             case DIALOG_BLACKLIST_APPS:
-                return MetricsProto.MetricsEvent.EXTENSIONS;
+                return MetricsProto.MetricsEvent.SUPERIOR;
             default:
                 return 0;
         }
@@ -123,7 +122,7 @@ public class PulseBlacklist extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.EXTENSIONS;
+        return MetricsProto.MetricsEvent.SUPERIOR;
     }
 
     @Override

@@ -43,6 +43,6 @@ public class AmbientTicker extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.EXTENSIONS;
+        return MetricsProto.MetricsEvent.SUPERIOR;
     }
 }
